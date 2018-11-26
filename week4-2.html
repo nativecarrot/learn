@@ -6,6 +6,16 @@
 </head>
 
 <style type="text/css">
+     .rear{
+         border-radius: 10px;
+         background-color: #ff6666;
+         border:1px solid white;
+     }
+     input{
+        background-color: #f9f0da;
+        border: 1px solid black;
+        border-radius: 10px;
+     }
     .p2 div{
     	overflow: hidden;
     }
@@ -30,6 +40,8 @@
 	.p21 li
 	{
 		color: gray;
+        position: relative;
+        left: 20px;
 	}
 	.p22{
 		width: 200px;
@@ -44,7 +56,7 @@
 	{
 		width: 200px;
 		background-color: #ff9999;
-        height: 680px;
+        height: 1060px;
 	}
 	.p23 li{
 		color: gray;
@@ -53,7 +65,7 @@
 	.p3{
 		float: left;
 		width: 1045px;
-		height:1000px;
+		height:1400px;
 		background-color:#eeeeed;
 	}
 	.p31 {
@@ -66,7 +78,7 @@
 		color: gray;
 		background-color: white;
         height: 180px;
-        margin: 10px 50px 10px 50px;
+        margin: 30px 50px 10px 50px;
        
 	}
 	.p33 div{
@@ -80,7 +92,7 @@
     }
     .p34{
         height: 150px;
-         margin: 10px 50px 10px 50px;
+         margin: 30px 50px 10px 50px;
     }
    .p34l{
         width: 50px;
@@ -120,18 +132,120 @@
         padding-top: 40px;
         margin-left: 10px;
     }
+    .p34rili img{
+    position: relative;;
+    top: 10px;
+    }
     .p35{
         padding-top: 50px;
-        height: 100px;
+        height: 150px;
         margin: 10px 50px 10px 50px;
     }
+    .p35 img{
+        padding-right: 40PX;
+    }
+    .p36{
+        height: 300px;
+        width: 1000px;
+    }
+    .p36l{
+        height: 300px;
+        margin: 10px 50px 10px 50px;
+        background-color: white;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        float: left;
+        width: 800px;
+    }
+    .titl{
+        height: 40px;
+        background-color: #f4f5f6;
+        color: gray;}
+    .table-a{
+        height: 200px;
+        margin: 30px 30px 30px 30px;
+        border: 1px solid #cccccc;
+    }
+    .table-a table{
+        margin:30px 20px 30px 40px;
+        width: 300px;
+    }
+    .table-a tr{
+        border-color: #f4f5f6;
+    }   
+    .table-a td{
+       text-align: center;
+    }
+    .tables{
+        margin: 10px 50px 10px 50px;
+        height: 300px;
+    }
+    .calend{
+        height: 300px;
+        width: 300px;
+        background-color: white;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        float: left;
+    }
+    .calend table{
+        padding-top: 10px;
+        width: 280px;
+        color: gray;
+    }
+    .table-b{
+        float: left;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .table-b td{
+        text-align: center;
+    }
+    .table-c{
+        height: 300px;
+        width: 630px;
+        background-color: white;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        margin-left: 10px;
+        float: left;
+    }
+    .table-c table{
+        border-color: #f4f5f6;
+        width: 600px;
+        text-align: center;
+        margin: 10px 10px 10px 10px;
+    }
+    .table-c td{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+       .progressbar
+        {
+            float: left;
+            width: 300px;
+            margin-top: 5px;
+            background-color: #dcdcdc;
+            height: 6px;
+        }
+        .progressbar div
+        {
+          
+            height: 6px;
+        }
+        .bepro{
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
 </style>
 
 <body>
      <div class="p1">
+        <img src="https://upload-images.jianshu.io/upload_images/14434229-100ac5bc57d4d946.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/66/format/webp">
      	<form action="/action_page.php">
      		<input type="text" placeholder="请输入您要搜索的内容" name="search">
-     		<button type="submit">提交</button>
+     		<button type="submit" class="rear">提交</button>
      	</form>
      </div>
 
@@ -141,7 +255,8 @@
 
      	<div class="p21">
      	  <ul>
-     		<br><font size="5px" color="white">Caicys</font><br>
+            <img src="https://upload-images.jianshu.io/upload_images/14434229-f892f25c7199ab45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+     	    <font style="font-size: 25px;color: white;  position: relative; bottom: 10px;">Caicys</font><br>
      		<li>110 &nbsp &nbsp 313</li>
      	    <li>收藏  &nbsp &nbsp  粉丝</li>
      	  </ul>
@@ -212,11 +327,12 @@
     	        <form action="">
                       <div></div>
                       <div>
-    	              卖方
-                      <select>
-                      <option>小B</option>
-                      </select>
+    	               卖方
+                       <select>
+                        <option>小B</option>
+                       </select>
                       </div>
+
     	        	 <div>
     	        	 	人数
     	        	 	<select>
@@ -230,7 +346,7 @@
     	        	 	</select>
     	        	 </div>
     	        </form>
-                <a href=" href=http://www.baidu.com"> <button type="submit";>搜索</button></a>
+                <a href="http://www.baidu.com"> <button type="submit";>搜索</button></a>
     	        </div>
      		   
      	</div>
@@ -243,28 +359,122 @@
             <div class="p34m">13.00am<br><br><font color="red">$1200</font></div>
             <div class="p34m">14.00am<br><br><font color="red">$1500</font></div>
             <div class="p34l"> ></div>
-            <div class="p34rili"><font color="gray">日历查询</font></div>
+            <div class="p34rili">
+                <img src="https://upload-images.jianshu.io/upload_images/14434229-534d613cd9c57a33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+                <font color="gray">日历查询</font>
+            </div>
         </div>
 
         <div class="p35">
            2016年4月份统计<br>
-           <img src=" a"> <img src="a "> <img src="aa">  
+           <img src="https://upload-images.jianshu.io/upload_images/14434229-82cec087e926db33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/190/format/webp">
+            <img src="https://upload-images.jianshu.io/upload_images/14434229-dd437ba983c889d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/196/format/webp "> 
+            <img src="https://upload-images.jianshu.io/upload_images/14434229-a235836e6e8f4a34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/185/format/webp">  
+            <img src="https://upload-images.jianshu.io/upload_images/14434229-33d190b116b9368a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/189/format/webp">
         </div>
         
-        <div class="p35">
-        <table border="1">
-             <tr>
-               <td>100</td>
-               <td>200</td>
-               <td>300</td>
-              </tr>
-              <tr>
-                  <td>400</td>
-                  <td>500</td>
-                  <td>600</td>
-              </tr>
-        </table>
+        <div class="p36">
+           <div class="p36l">
+           <div class="titl">
+              <font style="position: relative; top: 10px; left: 8px">
+              第一组项目
+              </font>
+           </div>
+           <div class="table-a">
+             <table    border="1" cellspacing="0" >
+               <tr><td>随便写写</td><td>内容不重要</td><td>大概这样</td><td>好想吃饭</td></tr>
+               <tr><td>随便写写</td><td>内容不重要</td><td>大概这样</td><td>好想吃饭</td></tr>
+               <tr><td>随便写写</td><td>内容不重要</td><td>大概这样</td><td>好想吃饭</td></tr>
+               <tr><td>随便写写</td><td>内容不重要</td><td>大概这样</td><td>好想吃饭</td></tr>
+               <tr><td>随便写写</td><td>内容不重要</td><td>大概这样</td><td>好想吃饭</td></tr>
+               <tr><td>随便写写</td><td>内容不重要</td><td>大概这样</td><td>好想吃饭</td></tr>
+             </table>
+           </div>
+           </div>
         </div>
+
+        <div class="tables">
+
+          <div class="calend">
+             <div class="titl">
+              <font style="position: relative; top: 10px; left: 8px">
+              日历
+              </font>
+             </div>
+             
+             <div class="table-b">
+               <select>
+                        <option>2017年</option><option>2016年</option><option>2015年</option>
+               </select>
+               <select>
+                        <option>6月</option><option>3月</option><option>2月</option>
+               </select>
+               <select>
+                        <option>1号</option><option>2号</option>
+               </select>
+               <select>
+                        <option>返回</option>
+               </select>
+               <hr color=#ffc0cb>
+                <table border="0">
+                 <tr><td>一</td><td>二</td><td>三</td><td>四</td><td>五</td><td>六</td><td>七</td></tr>  
+                </table>
+               <hr>
+                 <table border="0"> 
+                  <tr><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>1</td><td>2</td><td>3</td></tr> 
+                  <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+                  <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr> 
+                  <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>  
+                   <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr> 
+                 </table>
+             </div>
+            </div>
+
+            <div class="table-c">
+                 <div class="titl">
+                     <font style="position: relative; top: 10px; left: 8px">
+                             汽车行业品牌榜
+                     </font>
+                 </div>
+                 <table  border="1" cellspacing="0">
+                     <tr><td>排名</td><td>品牌</td><td>搜索指数</td></tr>
+
+                     <tr><td>1</td><td>大众</td>
+                     <td>  
+                            <div  class="bepro">   4341321</div>
+                            <div class="progressbar">
+                             <div style="width: 80%; background-color:#ed6e52;"></div></div>
+                     </td></tr>
+
+                     <tr><td>2</td><td>奔驰</td>
+                     <td>  
+                            <div  class="bepro">   3231223</div>
+                            <div class="progressbar">
+                             <div style="width: 60%; background-color:#f3b171;"></div></div>
+                     </td></tr>
+
+                     <tr><td>3</td><td>宝马</td>
+                     <td>  
+                            <div  class="bepro">   3123434</div>
+                            <div class="progressbar">
+                             <div style="width: 55%; background-color:#8accee;"></div></div>
+                     </td></tr>
+                     <tr><td>4</td><td>别克</td>
+                     <td>  
+                            <div  class="bepro">   2863244</div>
+                            <div class="progressbar">
+                             <div style="width: 45%; background-color:#8cfffb;"></div></div>
+                     </td></tr>
+                     <tr><td>5</td><td>丰田</td>
+                     <td>  
+                            <div  class="bepro">   1863244</div>
+                            <div class="progressbar">
+                             <div style="width: 35%; background-color:#8cffcb;"></div></div>
+                     </td></tr>
+                 </table>
+            </div>
+
+          </div>
 
      </div>
      
